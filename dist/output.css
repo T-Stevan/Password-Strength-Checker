@@ -9,8 +9,11 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-red-500: oklch(63.7% 0.237 25.331);
+    --color-red-700: oklch(50.5% 0.213 27.518);
     --color-amber-50: oklch(98.7% 0.022 95.277);
     --color-amber-900: oklch(41.4% 0.112 45.904);
+    --color-green-500: oklch(72.3% 0.219 149.579);
+    --color-green-700: oklch(52.7% 0.154 150.069);
     --color-sky-700: oklch(50% 0.134 242.749);
     --color-blue-500: oklch(62.3% 0.214 259.815);
     --color-indigo-500: oklch(58.5% 0.233 277.117);
@@ -18,6 +21,7 @@
     --color-fuchsia-500: oklch(66.7% 0.295 322.15);
     --color-gray-300: oklch(87.2% 0.01 258.338);
     --color-gray-400: oklch(70.7% 0.022 261.325);
+    --color-gray-600: oklch(44.6% 0.03 256.802);
     --color-gray-900: oklch(21% 0.034 264.665);
     --color-white: #fff;
     --spacing: 0.25rem;
@@ -276,6 +280,24 @@
   .bg-\[\#1e2331\] {
     background-color: #1e2331;
   }
+  .bg-\[\#20f907\] {
+    background-color: #20f907;
+  }
+  .bg-\[\#\] {
+    background-color: #;
+  }
+  .bg-\[\#e2ffdf\] {
+    background-color: #e2ffdf;
+  }
+  .bg-\[\#ffffdf\] {
+    background-color: #ffffdf;
+  }
+  .bg-\[rgb\(32\,249\,7\)\] {
+    background-color: rgb(32,249,7);
+  }
+  .bg-green-500 {
+    background-color: var(--color-green-500);
+  }
   .bg-linear-to-br {
     --tw-gradient-position: to bottom right;
     @supports (background-image: linear-gradient(in lab, red, red)) {
@@ -315,6 +337,10 @@
   .font-\[Inter\] {
     font-family: Inter;
   }
+  .text-2xl {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
+  }
   .text-3xl {
     font-size: var(--text-3xl);
     line-height: var(--tw-leading, var(--text-3xl--line-height));
@@ -323,20 +349,78 @@
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
   }
+  .font-medium {
+    --tw-font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-medium);
+  }
+  .text-\[\#00fb5c\] {
+    color: #00fb5c;
+  }
+  .text-\[\#1f0101\] {
+    color: #1f0101;
+  }
+  .text-\[\#014d1d\] {
+    color: #014d1d;
+  }
   .text-\[\#22c55e\] {
     color: #22c55e;
+  }
+  .text-\[\#01031f\] {
+    color: #01031f;
+  }
+  .text-\[\#\] {
+    color: #;
+  }
+  .text-\[\#b2a5a5\] {
+    color: #b2a5a5;
   }
   .text-\[\#f0efef\] {
     color: #f0efef;
   }
+  .text-\[\#f31818\] {
+    color: #f31818;
+  }
+  .text-\[\#f\] {
+    color: #f;
+  }
   .text-\[\#ff0000\] {
     color: #ff0000;
+  }
+  .text-\[\#ff1a1a\] {
+    color: #ff1a1a;
+  }
+  .text-\[\#ff\] {
+    color: #ff;
+  }
+  .text-\[\#fff\] {
+    color: #fff;
+  }
+  .text-\[\#ffff\] {
+    color: #ffff;
+  }
+  .text-\[\#fffff\] {
+    color: #fffff;
   }
   .text-\[\#ffffff\] {
     color: #ffffff;
   }
   .text-amber-900 {
     color: var(--color-amber-900);
+  }
+  .text-gray-600 {
+    color: var(--color-gray-600);
+  }
+  .text-green-500 {
+    color: var(--color-green-500);
+  }
+  .text-green-700 {
+    color: var(--color-green-700);
+  }
+  .text-red-700 {
+    color: var(--color-red-700);
+  }
+  .text-white {
+    color: var(--color-white);
   }
   .underline {
     text-decoration-line: underline;
@@ -347,6 +431,11 @@
   }
   .transition {
     transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, content-visibility, overlay, pointer-events;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .transition-colors {
+    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
   }
